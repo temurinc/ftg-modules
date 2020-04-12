@@ -1,3 +1,4 @@
+# огромное спасибо за скрипт https://github.com/PSPshnik
 #.tralka <кол-во слов> <Сколько капса(в %)> <Имя обидчика>
 from .. import loader, utils
 import logging
