@@ -1,7 +1,7 @@
 from telethon import events
 import time
 
-"""Command: .bigspam <number> DO NOT TRY THIS WITH YOUR ACCOUNT
+"""Command: .spamprn <number> DO NOT TRY THIS WITH YOUR ACCOUNT
 
 telethon.errors.rpcerrorlist.FloodWaitError: A wait of 280 seconds is required"""
 
