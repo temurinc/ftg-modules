@@ -11,7 +11,7 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     for i in range(int(input_str)):
-        m = await event.respond("https://www.pornhub.com")
+        m = await event.respond("https://blyadun.com/uploads/posts/2017-12-11-21/d30145d84a68766d5b8b65155b4e7c75_206279_07big.jpg")
         await m.delete()
     """if "|" in input_str:
         counter, spam_text = input_str.split("|")
