@@ -1,7 +1,7 @@
 from telethon import events
 import time
 
-"""Command: .spamprn <number> DO NOT TRY THIS WITH YOUR ACCOUNT
+"""Command: .spamprn <number> НЕ ПРОБЫВАТЬ НА СВОЕМ АККАУНТЕ
 
 telethon.errors.rpcerrorlist.FloodWaitError: A wait of 280 seconds is required"""
 
@@ -13,7 +13,7 @@ async def _(event):
     for i in range(int(input_str)):
         m = await event.respond("https://blyadun.com/uploads/posts/2017-12-11-21/d30145d84a68766d5b8b65155b4e7c75_206279_07big.jpg")
         await m.delete()
-    """if "|" in input_str:
+    if "|" in input_str:
         counter, spam_text = input_str.split("|")
         shiiinabot = "\u2060"
         for i in range(4000):
@@ -26,4 +26,4 @@ async def _(event):
         await event.delete()
     else:
         await event.edit("send me a message in the format `.bigspam count | spam message` and admins won't see it in recent actions" +
-                         " \n Courtesy: @shiiinabot")"""
+                         " \n Courtesy: @shiiinabot")
