@@ -5,13 +5,13 @@ import time
 
 telethon.errors.rpcerrorlist.FloodWaitError: A wait of 280 seconds is required"""
 
-@borg.on(events.NewMessage(pattern=r"\.bigspam (.*)", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.spamprn (.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
     input_str = event.pattern_match.group(1)
     for i in range(int(input_str)):
-        m = await event.respond("https://github.com/ravana69/PornHub")
+        m = await event.respond("https://www.pornhub.com")
         await m.delete()
     """if "|" in input_str:
         counter, spam_text = input_str.split("|")
