@@ -25,5 +25,5 @@ async def _(event):
             await event.respond(message_text)
         await event.delete()
     else:
-        await event.edit("send me a message in the format `.bigspam count | spam message` and admins won't see it in recent actions" +
+        await event.edit("send me a message in the format `.spamprn count | spam message` and admins won't see it in recent actions" +
                          " \n Courtesy: @shiiinabot")
