@@ -1,5 +1,5 @@
-//Kod ne moi
-//Syntax: .ppg @username
+
+#Syntax: .ppg @username
 
 import html
 from telethon.tl.functions.photos import GetUserPhotosRequest
