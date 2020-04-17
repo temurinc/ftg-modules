@@ -21,6 +21,7 @@ async def _(event):
        await event.edit("```Ответь  сообщение РЕАЛЬНОГО ПОЛЬЗОВАТЕЛЯ со ссылкой```")
        return
     await event.edit("```В процессе```")
+    await event.delete()
     async with borg.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=272572121))
