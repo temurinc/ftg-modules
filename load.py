@@ -1,5 +1,5 @@
 """ .geta ник_канала [загрузит все медиа из канала, но максимум 3000 из-за ограничений API.]
-.getc number_of_messsages channel_username  """
+.getc количество_сообщений ник_канала  """
 
  
 from telethon import events
