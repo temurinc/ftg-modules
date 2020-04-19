@@ -19,7 +19,7 @@ async def _(event):
 
         return
 
-    await event.edit("`Logical.. Huh....`")
+    await event.edit("`Добро пожаловать в галерею мыслей в 3 часа ночи. by @aivengog`")
 
     await asyncio.sleep(2)
 
