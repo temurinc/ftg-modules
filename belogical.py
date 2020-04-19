@@ -27,247 +27,246 @@ async def _(event):
 
     if x==1:
 
-        await event.edit("`\"Underwater bubbles and raindrops are total opposites of each other.\"`")
-
+        await event.edit("`\"Пузыри на воде и капли дождя - полная противоположность друг другу.\"`")
     if x==2:
 
-        await event.edit("`\"If you buy an eraser you are literally paying for your mistakes.\"`")
+        await event.edit("`\"Когда вы покупаете ластик, вы буквально платите за свои ошибки.\"`")
 
     if x==3:
 
-        await event.edit("`\"The Person you care for most has the potential to destroy you the most.\"`")
+        await event.edit("`\"Человек, о котором ты заботишься больше всего, способен причинить боль как никто другой.\"`")
 
     if x==4:
 
-        await event.edit("`\"If humans colonize the moon, it will probably attract retirement homes as the weaker gravity will allow the elderly to feel stronger.\"`")
+        await event.edit("`\"Если люди колонизируют Луну, там, вероятно, появятся дома престарелых, поскольку более слабая гравитация позволит пожилым чувствовать себя сильнее.\"`")
 
     if x==5:
 
-        await event.edit("`\"Any video with “wait for it” in the title is simply too long.\"`")
+        await event.edit("`\"Любое видео с надписью «Угарный конец>> или <<вы не подозреваете, что случилось в конце» в заголовке, зачастую слишком длинное.\"`")
 
     if x==6:
 
-        await event.edit("`\"Your age in years is how many times you’ve circled the Sun, but your age in months is how many times the Moon has circled you.\"`")
+        await event.edit("`\"Ваш возраст в годах - это сколько раз ВЫ облетели вокруг Солнца, но ваш возраст в месяцах - это сколько раз Луна облетела ВАС.\"`")
 
     if x==7:
 
-        await event.edit("`\"Biting your tongue while eating is a perfect example of how you can still screw up, even with decades of experience.\"`")
+        await event.edit("`\"Прикусывание языка во время еды - прекрасный пример того, как вы все еще можете облажаться, даже имея многолетний опыт.\"`")
 
     if x==8:
 
-        await event.edit("`\"Saying that your home is powered by a wireless Nuclear fusion reactor that is 93 Million miles away sounds way cooler than just saying you have solar panels on your roof.\"`")
+        await event.edit("`\"Рассказ о том, что ваш дом работает от беспроводного ядерного термоядерного реактора, который находится на расстоянии 150 миллионов километров, звучит гораздо круче, чем просто сказать, что у вас есть солнечные батареи на крыше.\"`")
 
     if x==9:
 
-        await event.edit("`\"The most crushing feeling is when someone smiles at you on the street and you don’t react fast enough to smile back.\"`")
+        await event.edit("`\"Самое ужасное чувство - когда кто-то улыбается тебе на улице, а ты не успеваешь улыбнуться в ответ..\"`")
 
     if x==10:
 
-        await event.edit("`\"Teeth constantly require maintenance to prevent their decay when alive, and yet they manage to survive for thousands of years buried as fossils.\"`")
+        await event.edit("`\"Зубы постоянно нуждаются в обслуживании, чтобы предотвратить их разрушение при жизни, и все же им удается выжить в течение тысяч лет, похороненными в окаменелостях.\"`")
 
     if x==11:
 
-        await event.edit("`\"A folder is for things that you don't want to fold.\"`")
+        await event.edit("`\"Даже <<Самая Важная Папка>> лежит в дальнем ящике стола.\"`")
 
     if x==12:
 
-        await event.edit("`\"Waking up in the morning sometimes feels like resuming a shitty movie you decided to quit watching.\"`")
+        await event.edit("`\"Иногда проснувшись утром вам кажется, будто вы снова смотрите дерьмовый фильм, который вы решили бросить.\"`")
 
     if x==13:
 
-        await event.edit("`\"If everything goes smoothly, you probably won't remember today.\"`")
+        await event.edit("`\"Если сегодня всё пройдет гладко и размеренно, вы даже не вспомните этот день.\"`")
 
     if x==14:
 
-        await event.edit("`\"When you meet new people in real life, you unlock more characters for your dream world.\"`")
+        await event.edit("`\"Когда вы встречаете новых людей в реальной жизни, вы открываете больше персонажей для своих снов.\"`")
 
     if x==15:
 
-        await event.edit("`\"Maybe if they renamed sunscreen to “anti-cancer cream” more people would wear it.\"`")
+        await event.edit("`\"Возможно, если бы переименовали солнцезащитный крем в «противораковый крем», больше людей стали бы его носить.\"`")
 
     if x==16:
 
-        await event.edit("`\"200 years ago, people would never have guessed that humans in the future would communicate by silently tapping on glass.\"`")
+        await event.edit("`\"200 лет назад люди никогда бы не подумали, что люди в будущем будут общаться, молча стуча по стеклу.\"`")
 
     if x==17:
 
-        await event.edit("`\"Parents worry about what their sons download and worry about what their daughters upload.\"`")
+        await event.edit("`\"Родители беспокоятся о том, что СКАЧИВАЮТ их сыновья, и беспокоятся о том, что ЗАГРУЖАЮТ их дочери.\"`")
 
     if x==18:
 
-        await event.edit("`\"It's crazy how you can be the same age as someone, but at a completely different stage in your life.\"`")
+        await event.edit("`\"Звучит безумно, но вы можете быть одного возраста с кем-то, но на совершенно разных уровнях развития в жизни.\"`")
 
     if x==19:
 
-        await event.edit("`\"When you think you wanna die, you really don't wanna die, you just don't wanna live like this.\"`")
+        await event.edit("`\"Когда ты думаешь, что хочешь умереть, ты действительно не хочешь умереть, ты просто не хочешь жить как сейчас.\"`")
 
     if x==20:
 
-        await event.edit("`\"Technically, no one has ever been in an empty room.\"`")
+        await event.edit("`\"Технически, ни один человек не был в пустой комнате.\"`")
 
     if x==21:
 
-        await event.edit("`\"An onion is the bass player of food. You would probably not enjoy it solo, but you’d miss it if it wasn’t there.\"`")
+        await event.edit("`\"Лук - бас-гитарист среди еды. Возможно, он вам не понравится будучи в одиночку, но вы бы жалели, если бы его вообще не было.\"`")
 
     if x==22:
 
-        await event.edit("`\"We run everywhere in videogames because we're too lazy to walk, but In real life we walk everywhere because we're too lazy to run.\"`")
+        await event.edit("`\"Мы бегаем повсюду в видеоиграх, потому что нам лень ходить, но в реальной жизни мы ходим везде, потому что нам лень бегать.\"`")
 
     if x==23:
 
-        await event.edit("`\"Every single decision you ever made has brought you to read this sentence.\"`")
+        await event.edit("`\"Каждое принятое вами решение заставляло вас читать это предложение...\"`")
 
     if x==24:
 
-        await event.edit("`\"The word 'quiet' is often said very loud.\"`")
+        await event.edit("`\"Слово <<ТИХО>> зачастую говорится слишком громко.\"`")
 
     if x==25:
 
-        await event.edit("`\"Everybody wants you to work hard, but nobody wants to hear about how hard you work.\"`")
+        await event.edit("`\"Все хотят, чтобы вы усердно работали, но никто не хочет слышать о том, как усердно вы работаете.\"`")
 
     if x==26:
 
-        await event.edit("`\"We brush our teeth with hair on a stick and brush our hair with teeth on a stick.\"`")
+        await event.edit("`\"Мы чистим зубы волосинками на палочке и чистим волосы зубьями на палочке.\"`")
 
     if x==27:
 
-        await event.edit("`\"No one remembers your awkward moments but they’re too busy remembering their own.\"`")
+        await event.edit("`\"Никто не помнит ваши неловкие моменты, ведь все слишком заняты, вспоминая свои собственные.\"`")
 
     if x==28:
 
-        await event.edit("`\"Dumb people try to say simple ideas as complex as possible while smart people try to say complex ideas as simple as possible.\"`")
+        await event.edit("`\"Глупые люди пытаются произносить простые идеи как можно более сложными, в то время как умные люди пытаются говорить сложные идеи как можно проще.\"`")
 
     if x==29:
 
-        await event.edit("`\"Some people think they're better than you because they grew up richer. Some people think they're better than you because they grew up poorer.\"`")
+        await event.edit("`\"Некоторые люди думают, что они лучше вас, потому что они СТАЛИ богаче. Некоторые люди думают, что они лучше вас, потому что они РОСЛИ беднее.\"`")
 
     if x==30:
 
-        await event.edit("`\"The biggest irony is that computers & mobiles were invented to save out time!\"`")
+        await event.edit("`\"Самая большая ирония в том, что компьютеры и мобильные телефоны были изобретены для экономии времени!\"`")
 
     if x==31:
 
-        await event.edit("`\"After honey was first discovered, there was likely a period where people were taste testing any available slime from insects.\"`")
+        await event.edit("`\"После того, как мед был впервые обнаружен, был период, когда люди испытывали вкус любой доступной слизи от насекомых.\"`")
 
     if x==32:
 
-        await event.edit("`\"You know you’re getting old when your parents start disappointing you, instead of you disappointing them.\"`")
+        await event.edit("`\"Вы поймёте, что стареете, когда родители начинут печалить вас, а не вы их.\"`")
 
     if x==33:
 
-        await event.edit("`\"Humans are designed to learn through experience yet the education system has made it so we get no experience.\"`")
+        await event.edit("`\"Люди созданы для того, чтобы учиться на собственном опыте, но сейчас система образования сама учит нас, поэтому мы не получаем никакого опыта.\"`")
 
     if x==34:
 
-        await event.edit("`\"By focusing on blinking, you blink slower... Same for breathing.\"`")
+        await event.edit("`\"Сосредоточившись на мигании, ваш организм перекладывает ответственность за это дело на ваш организм ... То же самое для дыхания...\"`")
 
     if x==35:
 
-        await event.edit("`\"Drivers in a hurry to beat traffic usually cause the accidents which create the traffic they were trying to avoid.\"`")
+        await event.edit("`\"Водители, которые спешат преодолевать пробки, обычно сами и вызывают аварии, которые создают пробку, которую они так пытались избежать.\"`")
 
     if x==36:
 
-        await event.edit("`\"Characters that get married in fiction were literally made for each other.\"`")
+        await event.edit("`\"Персонажи, которые женятся в художественной литературе, были буквально созданы друг для друга.\"`")
 
     if x==37:
 
-        await event.edit("`\"Babies are a clean hard drive that can be programmed with any language.\"`")
+        await event.edit("`\"Дети - это чистый жесткий диск, который можно запрограммировать на любом языке..\"`")
 
     if x==38:
 
-        await event.edit("`\"There could be a miracle drug that cures every disease to man, that we'll never know about because it doesn't work on rats.\"`")
+        await event.edit("`\"Возможно есть чудодейственное лекарство, которое излечивает человека от всех болезней, о котором мы никогда не узнаем, ведь оно не действует на крыс.\"`")
 
     if x==39:
 
-        await event.edit("`\"Rhinos evolved to grow a horn for protection, but it's what's making them go extinct.\"`")
+        await event.edit("`\"Носороги получили рог для защиты, но именно он и заставляет их вымирать.\"`")
 
     if x==40:
 
-        await event.edit("`\"Maybe we don't find time travelers because we all die in 25-50 years.\"`")
+        await event.edit("`\"Помни: только эта жизнь имеет цену!.\"`")
 
     if x==41:
 
-        await event.edit("`\"Sleep is the trial version of death, It even comes with ads based on your activity.\"`")
+        await event.edit("`\"Сон - это пробная версия смерти, она даже идет с рекламой, основанной на вашей активности.\"`")
 
     if x==42:
 
-        await event.edit("`\"The most unrealistic thing about Spy movies is how clean the air ventilation system is!\"`")
+        await event.edit("`\"Самая нереальная вещь в шпионских фильмах - насколько же там чистая система вентиляции!\"`")
 
     if x==43:
 
-        await event.edit("`\"In games we play through easy modes to unlock hard modes. In life we play through hard modes to unlock easy modes.\"`")
+        await event.edit("`\"В играх мы играем в простые режимы, чтобы разблокировать сложные. В жизни же мы играем в сложные режимы, чтобы разблокировать простые.\"`")
 
     if x==44:
 
-        await event.edit("`\"Silent people seem smarter than loud people, because they keep their stupid thoughts to themselves.\"`")
+        await event.edit("`\"Молчаливые люди кажутся умнее разговорчивых, потому что они держат свои глупые мысли при себе.\"`")
 
     if x==45:
 
-        await event.edit("`\"If Greenland actually turns green, we're all screwed.\"`")
+        await event.edit("`\"Если Гренландия (Greenland) на самом деле станет зеленой - мы все облажались.\"`")
 
     if x==46:
 
-        await event.edit("`\"If someone says clever things in your dream, it actually shows your own cleverness.\"`")
+        await event.edit("`\"Если кто-то говорит умные вещи в вашем сне, это на самом деле показывает ваш собственный интеллект.\"`")
 
     if x==47:
 
-        await event.edit("`\"Famous movie quotes are credited to the actor and not the actual writer who wrote them.\"`")
+        await event.edit("`\"Знаменитые цитаты из фильмов зачисляются актеру, а не самому человеку, который их написал.\"`")
 
     if x==48:
 
-        await event.edit("`\"No one actually teaches you how to ride a bicycle. They just hype you up until you work it out.\"`")
+        await event.edit("`\"Никто на самом деле не учит вас, как ездить на велосипеде. Они просто обманывают вас, пока вы сами это не сделаете.\"`")
 
     if x==49:
 
-        await event.edit("`\"Ask yourself why the the brain ignores the second the.\"`")
+        await event.edit("`\"- Мы живём лишь раз. - Нет, мы умираем лишь раз, живём мы каждый день.\"`")
 
     if x==50:
 
-        await event.edit("`\"You’ve probably forgot about 80% of your entire life and most of the memories you do remember are not very accurate to what actually happened.\"`")
+        await event.edit("`\"Вы, вероятно, уже забыли о 80% всей своей жизни, и большинство воспоминаний, которые вы помните, вовсе не всегда точно соответствуют тому, что произошло на самом деле.\"`")
 
     if x==51:
 
-        await event.edit("`\"It will be a lot harder for kids to win against their parents in video games in the future.\"`")
+        await event.edit("`\"В будущем детям будет намного сложнее побеждать своих родителей в видеоиграх..\"`")
 
     if x==52:
 
-        await event.edit("`\"Everyone has flaws, if you don't recognize yours, you have a new one.\"`")
+        await event.edit("`\"У всех есть недостатки, если вы не знаете свои, поздравляю, у вас есть новый.\"`")
 
     if x==53:
 
-        await event.edit("`\"Raising a child is training your replacement.\"`")
+        await event.edit("`\"Воспитание ребенка - это тренировка вашей замены.\"`")
 
     if x==54:
 
-        await event.edit("`\"'O'pen starts with a Closed circle, and 'C'lose starts with an open circle.\"`")
+        await event.edit("`\"Настоящий друг — это человек, который выскажет тебе в глаза все, что о тебе думает, а всем скажет, что ты — замечательный человек..\"`")
 
     if x==55:
 
-        await event.edit("`\"There's always someone who hated you for no reason, and still does.\"`")
+        await event.edit("`\"Всегда есть кто-то, кто ненавидил тебя без всякой на то причины и до сих пор это делает.\"`")
 
     if x==56:
 
-        await event.edit("`\"After popcorn was discovered, there must have been a lot of random seeds that were roasted to see if it would have the same effect.\"`")
+        await event.edit("`\"После того, как сумели получить попкорн, должно быть много случайных семян были поджарены, чтобы увидеть, будет ли он иметь тот же эффект.\"`")
 
     if x==57:
 
-        await event.edit("`\"The more important a good night's sleep is, the harder it is to fall asleep.\"`")
+        await event.edit("`\"Чем важнее хорошо выспаться ночью, тем труднее заснуть.\"`")
 
     if x==58:
 
-        await event.edit("`\"Blessed are those that can properly describe the type of haircut they want to a new stylist.\"`")
+        await event.edit("`\"Тем, кто могут правильно описать тип стрижки, которую они хотят новому стилисту, заготовлено отдельное место в раю.\"`")
 
     if x==59:
 
-        await event.edit("`\"Too many people spend money they haven't earned, to buy things they don't want, to impress people they don't like!\"`")
+        await event.edit("`\"Слишком много людей тратят деньги, которые они НЕ ЗАРАБОТАЛИ, чтобы покупать вещи, которые они НЕ ХОТЯТ, чтобы произвести впечатление на людей, которые им НЕ НРАВЯТЯ!\"`")
 
     if x==60:
 
-        await event.edit("`\"Theme park employees must be good at telling the difference between screams of horror and excitement.\"`")
+        await event.edit("`\"Сотрудники тематического парка должны хорошо понимать разницу между криками ужаса и простым волнением.\"`")
 
     if x==61:
 
-        await event.edit("`\"6 to 6:30 feels more half-an-hour than 5:50 to 6:20\"`")
+        await event.edit("`\"С 6 до 6:30 больше звучит как полчаса, чем с 5:50 до 6:20\"`")
 
     if x==62:
 
