@@ -15,7 +15,7 @@ async def _(event):
     if not reply_message.text:
        await event.edit("```Эммм, а на текст ты отвечать не пробовал(а)?```")
        return
-    chat = "@chotamreaderbot"
+    chat = "@HistoryAIBot"
     sender = reply_message.sender
     if reply_message.sender.bot:
        await event.edit("```Ответь  сообщение РЕАЛЬНОГО ПОЛЬЗОВАТЕЛЯ```")
