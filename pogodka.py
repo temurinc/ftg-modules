@@ -1,4 +1,4 @@
-"""Погода с помощью OpenWeatherMap
+"""Погода добывается с помощью OpenWeatherMap
 Вставьте АПИ в конфигурацию!!!
 Синтаксис: .weather <Город> """
  
@@ -24,22 +24,24 @@ async def _(event):
         sun_set_time = int(response_api["sys"]["sunset"]) + country_time_zone
         await event.edit(
             """{}
-**🌡️Температура**: {}°С
-    __минимальная__: {}°С
-    __максимальная__ : {}°С
-**🌪️Влажность**: {}%
-**🌬️Ветер**: {}m/s
-**☁️Давление**: {}гПа
+**🌡️Температура**: {} °С
+    __минимальная__: {} °С
+    __максимальная__ : {} °С
+**🌃Описание**: {} 
+**🌪️Влажность**: {} %
+**🌬️Ветер**: {} м/с
+**☁️Давление**: {} мм рт. ст.
 **🌞Рассвет**: {} {}
 **🌟Закат**: {} {}""".format(
                 input_str,
                 response_api["main"]["temp"],
                 response_api["main"]["temp_min"],
                 response_api["main"]["temp_max"],
+                response_api["weather"]["0"]["description"],
                 response_api["main"]["humidity"],
                 response_api["wind"]["speed"],
-                response_api["clouds"]["all"],
-                # response_api["main"]["pressure"],
+                # response_api["clouds"]["all"],
+                response_api["main"]["pressure"]/1,333,
                 time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(sun_rise_time)),
                 country_code,
                 time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(sun_set_time)),
