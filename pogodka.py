@@ -29,7 +29,7 @@ async def _(event):
     __максимальная__ : {} °С
 **🌪️Влажность**: {} %
 **🌬️Ветер**: {} м/с
-**☁️Давление**: {} мм рт. ст.
+**☁️Давление**: {} гПа
 **🌞Рассвет**: {} {}
 **🌟Закат**: {} {}""".format(
                 input_str,
@@ -39,7 +39,7 @@ async def _(event):
                 response_api["main"]["humidity"],
                 response_api["wind"]["speed"],
                 # response_api["clouds"]["all"],
-                response_api["main"]["pressure"]/1,333,
+                response_api["main"]["pressure"],
                 time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(sun_rise_time)),
                 country_code,
                 time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(sun_set_time)),
