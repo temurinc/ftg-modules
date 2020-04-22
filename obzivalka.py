@@ -247,7 +247,7 @@ class Tralka(loader.Module):
         args = utils.get_args(message)
         chatid = str(message.chat_id)
         if len(args) < 2:
-            await utils.answer(message, "Not enough arguments")
+            await utils.answer(message, "Проверь, ты всё указал правильно?")
         elif len(args) == 2:
             await utils.answer(message, generate(int(args[0]), int(args[1]), None))
         else:
