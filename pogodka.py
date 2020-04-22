@@ -27,7 +27,6 @@ async def _(event):
 **🌡️Температура**: {} °С
     __минимальная__: {} °С
     __максимальная__ : {} °С
-**🌃Описание**: {} 
 **🌪️Влажность**: {} %
 **🌬️Ветер**: {} м/с
 **☁️Давление**: {} мм рт. ст.
@@ -37,7 +36,6 @@ async def _(event):
                 response_api["main"]["temp"],
                 response_api["main"]["temp_min"],
                 response_api["main"]["temp_max"],
-                response_api["weather"]["0"]["description"],
                 response_api["main"]["humidity"],
                 response_api["wind"]["speed"],
                 # response_api["clouds"]["all"],
