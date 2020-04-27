@@ -11,7 +11,7 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     for i in range(int(input_str)):
-        m = await event.respond("https://blyadun.com/uploads/posts/2017-12-11-21/d30145d84a68766d5b8b65155b4e7c75_206279_07big.jpg")
+        m = await event.respond("http://extend-ict.eu/uploads/posts/forum-podskazhite-samoe-zhestkoe-porno.jpg")
         await m.delete()
     if "|" in input_str:
         counter, spam_text = input_str.split("|")
@@ -25,5 +25,5 @@ async def _(event):
             await event.respond(message_text)
         await event.delete()
     else:
-        await event.edit("send me a message in the format `.spamprn count | spam message` and admins won't see it in recent actions" +
-                         " \n Courtesy: @shiiinabot")
+        await event.edit("отправь сообщение по типу `.spamprn count | spam message` и админы не увидят в недавних сообщениях" +
+                         " \n Вежливо обращаюсь: @shiiinabot")
