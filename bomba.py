@@ -29,5 +29,3 @@ async def _(event):
     await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n😵😵😵😵 \n")
     await asyncio.sleep(0.5)
     await event.edit("БОМБИТ С ТЕБЯ!")
-    await asyncio.sleep(2)
-    await event.delete()
