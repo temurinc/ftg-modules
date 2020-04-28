@@ -13,7 +13,7 @@ async def _(event):
     if event.fwd_from:
 
         return
-
+while true:
     await event.edit("⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n")
     await asyncio.sleep(0.3)
     await event.edit("⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬛⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n⬜⬜⬜⬜⬜⬜⬜ \n")
