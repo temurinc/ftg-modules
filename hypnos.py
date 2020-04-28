@@ -2,11 +2,11 @@ from telethon import events
 
 import asyncio
 
+import os
 
+import sys
 
-
-
-@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.hypnos", outgoing=True))
 
 async def _(event):
 
@@ -14,15 +14,9 @@ async def _(event):
 
         return
 
-    animation_interval = 0.3
+    animation_time = 0.3
 
     animation_ttl = range(0, 15)
-
-    input_str = event.pattern_match.group(1)
-
-    if input_str == "hypnos":
-
-        await event.edit(input_str)
 
         animation_chars = [
         
@@ -45,6 +39,11 @@ async def _(event):
 
         for i in animation_ttl:
 
-            await asyncio.sleep(animation_interval)
+            await asyncio.sleep(animation_time)
 
             await event.edit(animation_chars[i % 15])
+
+            
+            
+            
+            
