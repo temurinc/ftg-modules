@@ -1,7 +1,7 @@
 """Делаем QR
 Команды:
 
-пишем .terminal pip3 install qrcode !!!!!!
+пишем .terminal pip3 install qrcode
 
 
 .getqr расшифровка
