@@ -2,6 +2,7 @@
 Команды:
 .gban Причина от GLOBALBAN
 .gban Причина"""
+
 from telethon import events
 import asyncio
 from uniborg.util import admin_cmd
