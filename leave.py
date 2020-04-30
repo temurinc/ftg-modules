@@ -26,4 +26,4 @@ async def leave(e):
 
         else:
 
-            await e.edit('`Sir This is Not A Chat`')
+            await e.edit('`Сер, но это не чат!`')
