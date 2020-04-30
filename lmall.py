@@ -508,7 +508,7 @@ async def _(event):
 
         await event.edit("Хьюстон, у нас проблемы! Попробуй позже.")
       
- @borg.on(admin_cmd(pattern="lmgit(.*)"))
+@borg.on(admin_cmd(pattern="lmgit(.*)"))
 
 
 
