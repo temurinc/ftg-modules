@@ -1,13 +1,13 @@
 """Банит пользователя во всех группах, где вы админ.
 Команды:
-.banall Причина
-.unbanall Причина"""
+.gban Причина от GLOBALBAN
+.gban Причина"""
 from telethon import events
 import asyncio
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("banall ?(.*)"))
+@borg.on(admin_cmd("gban ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -20,12 +20,12 @@ async def _(event):
             r_from_id = r.from_id
         await borg.send_message(
             Config.G_BAN_LOGGER_GROUP,
-            "!забанил везде [user](tg://user?id={}) {}".format(r_from_id, reason)
+            "!banall [user](tg://user?id={}) {}".format(r_from_id, reason)
         )
     await event.delete()
 
 
-@borg.on(admin_cmd("unbanall ?(.*)"))
+@borg.on(admin_cmd("ungban ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -35,6 +35,6 @@ async def _(event):
         r_from_id = r.from_id
         await borg.send_message(
             Config.G_BAN_LOGGER_GROUP,
-            "!разбанил везде [user](tg://user?id={}) {}".format(r_from_id, reason)
+            "!unbanall [user](tg://user?id={}) {}".format(r_from_id, reason)
         )
     await event.delete()
