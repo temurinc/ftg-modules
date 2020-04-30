@@ -19,7 +19,7 @@ async def _(event):
         else:
             r_from_id = r.from_id
         await borg.send_message(
-            Config.ALL_BAN_LOGGER_GROUP,
+            Config.G_BAN_LOGGER_GROUP,
             "!забанил везде [user](tg://user?id={}) {}".format(r_from_id, reason)
         )
     await event.delete()
@@ -34,7 +34,7 @@ async def _(event):
         r = await event.get_reply_message()
         r_from_id = r.from_id
         await borg.send_message(
-            Config.ALL_BAN_LOGGER_GROUP,
+            Config.G_BAN_LOGGER_GROUP,
             "!разбанил везде [user](tg://user?id={}) {}".format(r_from_id, reason)
         )
     await event.delete()
