@@ -1,6 +1,6 @@
 """
 
-Давай я найду в Google / YouTube / DuckDuckGo / altnews / Xvideo / Xvideos2/ Pornhub / var / log / Dyno сециально для тебя! 
+Давай я найду в Google / YouTube / DuckDuckGo / GitHub / RBC / Xvideo / Xvideos2/ Pornhub / var / log / Dyno сециально для тебя! 
 
 Что писать:
 
