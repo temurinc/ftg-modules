@@ -309,7 +309,7 @@ async def _(event):
 
 
 
-    sample_url = "https://da.gd/s?url=https://www.rbc.ua/rus/search?search_text={}submit=".format(input_str.replace(" ","+"))
+    sample_url = "https://da.gd/s?url=https://www.rbc.ua/rus/search?search_text={}".format(input_str.replace(" ","+"))
 
 
 
