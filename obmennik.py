@@ -16,14 +16,14 @@ async def _(event):
     if len(input_sgra) == 3:
         try:
             nomer = float(input_sgra[0])
-            currency_from = input_sgra[1].upper()
-            currency_to = input_sgra[2].upper()
-            request_url = "https://api.exchangeratesapi.io/latest?base={}".format(currency_from)
-            current_response = requests.get(request_url).json()
-            if currency_to in current_response["rates"]:
-                current_rate = float(current_response["rates"][currency_to])
+            val1 = input_sgra[1].upper()
+            val2 = input_sgra[2].upper()
+            request_url = "https://api.exchangeratesapi.io/latest?base={}".format(val1)
+            otvet = requests.get(request_url).json()
+            if val2 in otvet["rates"]:
+                current_rate = float(otvet["rates"][val2])
                 rebmun = round(nomer * current_rate, 2)
-                await event.edit("{} {} = {} {}".format(nomer, currency_from, rebmun, currency_to))
+                await event.edit("{} {} = {} {}".format(nomer, val1, rebmun, val2))
             else:
                 await event.edit("НИЧЕГО НЕ ПОНИМАЮ")
         except e:
