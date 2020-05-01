@@ -22,7 +22,7 @@ async def _(event):
             current_response = requests.get(request_url).json()
             if currency_to in current_response["rates"]:
                 current_rate = float(current_response["rates"][currency_to])
-                rebmun = round(number * current_rate, 2)
+                rebmun = round(nomer * current_rate, 2)
                 await event.edit("{} {} = {} {}".format(nomer, currency_from, rebmun, currency_to))
             else:
                 await event.edit("НИЧЕГО НЕ ПОНИМАЮ")
