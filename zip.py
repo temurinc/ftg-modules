@@ -1,12 +1,12 @@
-""" комманды:
-.terminal pip3 install datetime
-.terminal pip3 install pySmartDL
-Также вы можете поменять папку временного сохранения в конфигурации.
-Не пугайтесь, мне просто удобней писать на английском.
+#комманды:
+#.terminal pip3 install datetime
+#.terminal pip3 install pySmartDL
+#Также вы можете поменять папку временного сохранения в конфигурации.
+#Не пугайтесь, мне просто удобней писать на английском.
+#
+#.zip
+#.unzip
 
-.zip
-.unzip
-"""
 
 import asyncio
 import os
