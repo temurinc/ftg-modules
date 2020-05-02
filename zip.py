@@ -1,4 +1,9 @@
 """ комманды:
+.terminal pip3 install datetime
+.terminal pip3 install pySmartDL
+Также вы можете поменять папку временного сохранения в конфигурации.
+Не пугайтесь, мне просто удобней писать на английском.
+
 .zip
 .unzip
 """
@@ -28,7 +33,7 @@ if not os.path.isdir(extracted):
 async def _(event):
     if event.fwd_from:
         return
-    mone = await event.edit("Processing ...")
+    mone = await event.edit("В процессе")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -40,7 +45,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "пытаюсь загрузить")
                 )
             )
         except Exception as e:  # pylint:disable=C0103,W0703
@@ -48,7 +53,7 @@ async def _(event):
         else:
             end = datetime.now()
             ms = (end - start).seconds
-            await mone.edit("Stored the zip to `{}` in {} seconds.".format(downloaded_file_name, ms))
+            await mone.edit("Заархивировано в `{}` в течении {} секунд by @aivengog.".format(downloaded_file_name, ms))
 
         with zipfile.ZipFile(downloaded_file_name, 'r') as zip_ref:
             zip_ref.extractall(extracted)
@@ -89,7 +94,7 @@ async def _(event):
                     await borg.send_file(
                         event.chat_id,
                         single_file,
-                        caption=f"UnZipped `{caption_rts}`",
+                        caption=f"Разархивировал `{caption_rts}`",
                         force_document=force_document,
                         supports_streaming=supports_streaming,
                         allow_cache=False,
@@ -129,7 +134,7 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.is_reply:
-        await event.edit("Ответить на файл, чтобы сжать его.")
+        await event.edit("Ответьте на файл, чтобы сжать его.")
         return
     mone = await event.edit("`В процессе`")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
@@ -153,7 +158,7 @@ async def _(event):
     await borg.send_file(
         event.chat_id,
         directory_name + ".zip",
-        caption="Заархивировано @aivengog",
+        caption="Заархивировано by @aivengog",
         force_document=True,
         allow_cache=False,
         reply_to=event.message.id,
