@@ -153,7 +153,7 @@ async def _(event):
     await borg.send_file(
         event.chat_id,
         directory_name + ".zip",
-        caption="Zipped By EyePatch",
+        caption="Заархивировано @aivengog",
         force_document=True,
         allow_cache=False,
         reply_to=event.message.id,
@@ -164,7 +164,7 @@ async def _(event):
 
 
 def zipdir(path, ziph):
-    # ziph is zipfile handle
+    # ziph это zip handle не пугайтесь
     for root, dirs, files in os.walk(path):
         for file in files:
             ziph.write(os.path.join(root, file))
