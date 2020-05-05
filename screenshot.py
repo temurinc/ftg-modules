@@ -11,14 +11,14 @@ from uniborg.util import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    if Config.SCREEN_SHOT_API_AIVENGO is None:
+    if Config.SCREEN_SHOT_LAYER_ACCESS_KEY is None:
         await event.edit("В конфигурации вбей API https://screenshotlayer.com/product \nЯ не могу так работать!")
         return
     await event.edit("В процессе")
     sample_url = "https://api.screenshotlayer.com/api/capture?access_key={}&url={}&fullpage={}&viewport={}&format={}&force={}"
     input_str = event.pattern_match.group(1)
     response_api = requests.get(sample_url.format(
-        Config.SCREEN_SHOT_API_AIVENGO,
+        Config.SCREEN_SHOT_LAYER_ACCESS_KEY,
         input_str,
         "1",
         "2560x1440",
