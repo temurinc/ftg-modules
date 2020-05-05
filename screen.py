@@ -1,5 +1,5 @@
 """Делает скриншот сайта
-Syntax: .scr <ссылка>"""
+Команда: .scr <ссылка>"""
 
 import io
 import requests
