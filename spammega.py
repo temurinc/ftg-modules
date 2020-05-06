@@ -13,7 +13,7 @@ async def _(event):
     for i in range(int(input_str)):
         m = await event.respond("http://extend-ict.eu/uploads/posts/forum-podskazhite-samoe-zhestkoe-porno.jpg")
         await m.delete()
-    if "|" in input_str:
+   """ if "|" in input_str:
         counter, spam_text = input_str.split("|")
         shiiinabot = "\u2060"
         for i in range(4000):
@@ -26,4 +26,4 @@ async def _(event):
         await event.delete()
     else:
         await event.edit("отправь сообщение по типу `.spamprn count | spam message` и админы не увидят в недавних сообщениях" +
-                         " \n Вежливо обращаюсь: @shiiinabot")
+                         " \n Вежливо обращаюсь: @shiiinabot")"""
