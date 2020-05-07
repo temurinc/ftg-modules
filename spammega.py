@@ -13,7 +13,7 @@ async def _(event):
     for i in range(int(input_str)):
         m = await event.respond("http://extend-ict.eu/uploads/posts/forum-podskazhite-samoe-zhestkoe-porno.jpg")
         await m.delete()
-   """ if "|" in input_str:
+    """if "|" in input_str:
         counter, spam_text = input_str.split("|")
         shiiinabot = "\u2060"
         for i in range(4000):
