@@ -1,6 +1,6 @@
 """
 
-Давай я найду в Google / YouTube / DuckDuckGo / GitHub / RBC / Xvideo / Xvideos2/ Pornhub / var / log / Dyno сециально для тебя! 
+Давай я проверю Google / YouTube / DuckDuckGo / GitHub / RBC / Xvideo / Xvideos2/ Pornhub / var / log / Dyno сециально для тебя! 
 
 Что писать:
 
@@ -550,3 +550,44 @@ async def _(event):
 
         await event.edit("Хьюстон, у нас проблемы! Попробуй позже.")
 
+@borg.on(admin_cmd(pattern="lmw(.*)"))
+
+
+
+async def _(event):
+
+
+
+    if event.fwd_from:
+
+
+
+        return
+
+
+
+    input_str = event.pattern_match.group(1)
+
+
+
+    sample_url = "https://da.gd/s?url=https://ru.wikipedia.org/wiki/{}".format(input_str.replace(" ","_"))
+
+
+
+    response_api = requests.get(sample_url).text
+
+
+
+    if response_api:
+
+
+
+        await event.edit("Я проверю **Wikipedia** специально для тебя:\n👉 [{}]({})\n`Молодец, что решил узнать новое, не забудь сказать спасибо! 😉` ".format(input_str,response_api.rstrip()))
+
+
+
+    else:
+
+
+
+        await event.edit("Хьюстон, у нас проблемы! Попробуй позже.")
