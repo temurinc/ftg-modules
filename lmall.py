@@ -10,6 +10,8 @@
  
  .lmd <поисковый запрос DuckDuckGo>
  
+ .lmw <поиск в Wikipedia>
+ 
  .lmgit <поиск репозитория в GitHub>
 
  .lmnews <поиск новостей>
