@@ -7,8 +7,8 @@ Command:
 import requests
 import bs4
 import re
-from telethon import *
-from uniborg import *
+from telethon import events
+from uniborg.util import *
 
 @borg.on(events.NewMessage(outgoing=True,pattern='.film (.*)'))
 
