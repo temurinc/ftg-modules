@@ -45,8 +45,8 @@ async def imdb(e):
             credits = soup.findAll('div', 'credit_summary_item')
             if len(credits)==1:
               director = credits[0].a.text
-              writer = 'Недоступно :cry:'
-              stars = 'Недоступно :cry:'
+              writer = 'Недоступно 😢'
+              stars = 'Недоступно 😢'
             elif len(credits)>2:
               director = credits[0].a.text
               writer = credits[1].a.text
@@ -57,7 +57,7 @@ async def imdb(e):
               stars = actors[0]+','+actors[1]+','+actors[2]
             else:
               director = credits[0].a.text
-              writer = 'Недоступно :cry:'
+              writer = 'Недоступно 😢'
               actors = []
               for x in credits[1].findAll('a'):
                 actors.append(x.text)
@@ -66,7 +66,7 @@ async def imdb(e):
             if soup.find('div', "inline canwrap"):
               story_line = soup.find('div', "inline canwrap").findAll('p')[0].text
             else:
-              story_line = 'Недоступно :cry:'
+              story_line = 'Недоступно 😢'
             info = soup.findAll('div', "txt-block")
             if info:
               mov_country = []
@@ -82,7 +82,7 @@ async def imdb(e):
               for r in soup.findAll('div',"ratingValue"):
                 mov_rating = r.strong['title']
             else:
-              mov_rating = 'Недоступно :cry:'
+              mov_rating = 'Недоступно 😢'
             await e.edit('<b>Название : </b><code>'+mov_title+
                   '<a href='+poster+'> ‏‏‎ </a>'
                   '</code>\n<code>'+mov_details+
