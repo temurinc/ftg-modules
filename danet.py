@@ -13,9 +13,9 @@ async def _(event):
     if event.reply_to_msg_id:
         message_id = event.reply_to_msg_id
     r = requests.get("https://yesno.wtf/api").json()
-    if r["answer"] = "yes":
+    if r["answer"] == "yes":
         m = "ДА!"
-    if r["answer"] = "no":
+    if r["answer"] == "no":
         m = "НЕТ!"
     await borg.send_message(
         event.chat_id,
