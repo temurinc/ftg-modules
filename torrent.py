@@ -12,7 +12,7 @@ import asyncio
 from telegraph import Telegraph
 
 telegraph = Telegraph()
-telegraph.create_account(short_name='{}'.format(borg.me.username))
+telegraph.create_account(short_name='HumanX')
 
 
 @borg.on(admin_cmd(pattern="tor ?(.*)", allow_sudo=True))
