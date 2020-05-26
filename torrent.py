@@ -57,6 +57,8 @@ async def tor_search(event):
 	print("Ищу ссылку (в сибирь)")
 		
 	for url in urls:
+		sample_url = "https://da.gd/s?url={}".format(url)
+		response_api = requests.get(sample_url).text
 		res = requests.get(url,headers)
 		# print("URl: "+url)
 		source = bs(res.text,'lxml')
@@ -67,8 +69,6 @@ async def tor_search(event):
 				mg = div.p.a['href']
 				# print(str(mg)) потом попробую
 				
-   				sample_url = "https://da.gd/s?url={}".format(url)
-				response_api = requests.get(sample_url).text
 				magnets.append("<b>Ссылка: </b>"+str(response_api.rstrip())+"<br/><b>\nМагнет: </b>{}\n<br/>".format(str(mg)))
 			except:
 				pass	
