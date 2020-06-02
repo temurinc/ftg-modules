@@ -22,9 +22,7 @@ import json
 from datetime import datetime
 import dateutil.parser
 
-from .. import loader, utils
-
-logger = logging.getLogger(__name__)
+from .. import utils
 
 def register(cb):
     cb(CoronaReportsMod())
