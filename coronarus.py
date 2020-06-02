@@ -28,19 +28,11 @@ logger = logging.getLogger(__name__)
 
 def register(cb):
     cb(CoronaReportsMod())
-
-class CoronaReportsMod(loader.Module):
-    """Статистика по ковиду, то что ты так ждал!"""
-    def __init__(self):
-        self.config = loader.ModuleConfig("DEFAULT_COUNTRY", _("UA"), ######### ВМЕСТО UA ПИШИТЕ СВОЮ СТРАНУ, она выведется при вводе без страны
-                                          "Укажи свою страну(как аббреватуру или латинницой)")
-        self.name = _("Corovavirus")
-
     async def coronacmd(self, message):
         """.covid <Страна (или нет, тогда выведет указанную)>"""
         args = utils.get_args_raw(message)
         if not args:
-            country = self.config["DEFAULT_COUNTRY"]
+            country = UA
         else:
             country = args
 
