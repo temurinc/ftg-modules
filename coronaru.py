@@ -30,7 +30,7 @@ def register(cb):
         """.covid <Страна (или нет, тогда выведет указанную)>"""
         args = utils.get_args_raw(message)
         if not args:
-            country = UA
+            country = "RU"
         else:
             country = args
 
