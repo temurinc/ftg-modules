@@ -21,14 +21,12 @@ async def _(event):
 
 
 __Ссылка__: {}
-__HD (если есть)__: {}
 Главный космонавт: @aivengog
             """.format(
                 response_api["date"],
                 response_api["title"],
                 response_api["explanation"],
-                response_api["url"],
-                response_api["hdurl"],
+                response_api["url"]
                       )
 
                      )
