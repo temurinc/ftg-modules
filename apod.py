@@ -6,6 +6,7 @@ import time
 from uniborg.util import admin_cmd
 from telethon import events
 import requests
+from googletrans import Translator
 
 
 @borg.on(events.NewMessage(pattern=r"\.apod", outgoing=True))
@@ -13,6 +14,8 @@ async def _(event):
     if event.fwd_from:
         return
     response_api = requests.get("https://api.nasa.gov/planetary/apod?api_key=YDNm230oBE5IQdDenyQCzB5P62Hhc9EAJcLxKHE3").json()
+    title = translator.translate(response_api["title"], dest='ru')
+    opis = translator.translate(response_api["explanation"], dest='ru')
     await event.edit(
             """
 **Дата**: {} 
@@ -26,8 +29,8 @@ async def _(event):
 Главный космонавт: @aivengog
             """.format(
                 response_api["date"],
-                response_api["title"],
-                response_api["explanation"],
+                title,
+                opis,
                 response_api["url"]
                       )
 
