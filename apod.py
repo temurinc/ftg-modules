@@ -13,9 +13,10 @@ from googletrans import Translator
 async def _(event):
     if event.fwd_from:
         return
+    translator = Translator()
     response_api = requests.get("https://api.nasa.gov/planetary/apod?api_key=YDNm230oBE5IQdDenyQCzB5P62Hhc9EAJcLxKHE3").json()
-    title = translator.translate(response_api["title"], dest='ru')
-    opis = translator.translate(response_api["explanation"], dest='ru')
+    title = translator.translate.text(response_api["title"], dest='ru')
+    opis = translator.translate.text(response_api["explanation"], dest='ru')
     await event.edit(
             """
 **Дата**: {} 
