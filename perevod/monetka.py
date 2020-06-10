@@ -14,6 +14,8 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     if input_str:
         input_str = input_str.lower()
+    if r == 42:
+        await event.edit("Посхалочка от Айвена")
     if r % 2 == 1:
         if input_str == "решка":
             await event.edit("Монетка упала **Решкой**. \n Ура, ты угадал.")
