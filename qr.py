@@ -13,6 +13,9 @@ import os
 from uniborg.util import admin_cmd
 import qrcode
 from bs4 import BeautifulSoup
+
+# requires: bs4
+# requires: qrcode
  
  
 def progress(current, total):
