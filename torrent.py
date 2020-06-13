@@ -1,6 +1,6 @@
 """
 Ищем торренты с сайта torrentdownloads.me
-Команда: .tor search_string
+Команда: .tor <запрос>
 Внимание: количество результатов я ограничил до 20
 
 """
@@ -11,8 +11,11 @@ from uniborg.util import admin_cmd
 import asyncio
 from telegraph import Telegraph
 
+# requires: telegraph
+# requires: bs4
+
 telegraph = Telegraph()
-telegraph.create_account(short_name='HumanX')
+telegraph.create_account(short_name='Lucifer+Legendary')
 
 
 @borg.on(admin_cmd(pattern="tor ?(.*)", allow_sudo=True))
