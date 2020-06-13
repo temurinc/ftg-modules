@@ -2,6 +2,8 @@
 Написал Айвен, https://github.com/AivenGog/ftg, кто удалит, тот плохой человек, неуважающий труд других
 Синтаксис: .apod  """
 
+# requires: googletrans
+
 import time
 from uniborg.util import admin_cmd
 from telethon import events
