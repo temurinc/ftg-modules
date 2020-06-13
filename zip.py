@@ -9,6 +9,13 @@
 #.unzip
 
 
+# requires: pySmartDL
+# requires: hachoir
+# requires: datetime
+# requires: zipfile
+
+
+
 import asyncio
 import os
 import time
