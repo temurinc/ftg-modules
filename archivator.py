@@ -6,6 +6,12 @@
 #.unrar
 # Также спасибо @By_Azade
 
+# requires: pySmartDL
+# requires: hachoir
+# requires: datetime
+# requires: zipfile
+# requires: patool
+
 import asyncio
 import os
 import time
@@ -22,6 +28,7 @@ from hachoir.parser import createParser
 from zipfile import ZipFile
 from datetime import datetime
 from sample_config import Config
+
 
 
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "извлечено/"
