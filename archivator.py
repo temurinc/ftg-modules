@@ -10,7 +10,7 @@ import asyncio
 import os
 import time
 import zipfile
-import patoolib
+import patool
 import subprocess
 from telethon import events
 from pySmartDL import SmartDL
