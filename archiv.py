@@ -9,12 +9,6 @@
 #.unrar
 # Также спасибо @By_Azade
 
-
-# requires: pySmartDL
-# requires: hachoir
-# requires: datetime
-# requires: zipfile
-
 import asyncio
 import os
 import time
