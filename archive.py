@@ -23,11 +23,6 @@ from zipfile import ZipFile
 from datetime import datetime
 from sample_config import Config
 
-# requires: pySmartDL
-# requires: hachoir
-# requires: datetime
-# requires: zipfile
-# requires: patool
 
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "извлечено/"
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
