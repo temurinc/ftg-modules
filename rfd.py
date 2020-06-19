@@ -46,21 +46,7 @@ class AFKMod(loader.Module):
             return
         if message.mentioned or getattr(message.to_id, "user_id", None) == self._me.id:
             afk_state = self.get_afk()
-            if not afk_state:
-                return
-            logger.debug("tagged!")
-            if user.is_self or user.bot or user.verified:
-                logger.debug("User is self, bot or verified.")
-                return
-            if self.get_afk() is False:
-                return
-            now = datetime.datetime.now().replace(microsecond=0)
-            gone = datetime.datetime.fromtimestamp(self._db.get(__name__, "gone")).replace(microsecond=0)
-            diff = now - gone
-            if afk_state is True:
-                ret = self.strings("afk", message)
-            elif afk_state is not False:
-                ret = self.strings("afk_reason", message).format(afk_state)
+            ret = self.strings("afk_reason", message).format(afk_state)
             await utils.answer(message, ret)
 
     def get_afk(self):
