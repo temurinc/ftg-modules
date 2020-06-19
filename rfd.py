@@ -48,3 +48,6 @@ class AFKMod(loader.Module):
             afk_state = self.get_afk()
             ret = self.strings("afk_reason", message).format(afk_state)
             await utils.answer(message, ret)
+
+    def get_afk(self) :
+        return self._db.get(__name__, "afk", False)
