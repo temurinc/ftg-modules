@@ -1,7 +1,4 @@
 #комманды:
-#.terminal pip3 install datetime
-#.terminal pip3 install pySmartDL
-#.restart
 #Также вы можете поменять папку временного сохранения в конфигурации.
 #
 #.zip
