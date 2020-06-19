@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 class AFKMod(loader.Module):
     """Посылает сообщение при вашем теге"""
     strings = {"name": "RFD",
-               "gone": "Не тэгай меня",
+               "gone": "Режим анти-тэга включен",
                "back": "Режим анти-тэга выключен",
                "afk": "<b>НЕ тэгай меня.</b>",
                "afk_reason": "{}"}
@@ -45,7 +45,10 @@ class AFKMod(loader.Module):
         if not isinstance(message, types.Message):
             return
         if message.mentioned or getattr(message.to_id, "user_id", None) == self._me.id:
-            afk_state = self.get_afk()
-            ret = self.strings("afk_reason", message).format(afk_state)
-            await utils.answer(message, ret)
+            if self.get_afk() != "False":
+             vafk_state = self.get_afk()
+             ret = self.strings("afk_reason", message).format(afk_state)
+             await utils.answer(message, ret)
 
+    def get_afk(self):
+        return self._db.get(__name__, "afk", False)
