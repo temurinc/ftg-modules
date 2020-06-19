@@ -13,10 +13,10 @@ logger = logging.getLogger(__name__)
 class AFKMod(loader.Module):
     """Посылает сообщение при вашем теге"""
     strings = {"name": "RFD",
-               "gone": "<b>Не тэгай меня</b>",
-               "back": "<b>Режим анти-тэга выключен</b>",
+               "gone": "Не тэгай меня",
+               "back": "Режим анти-тэга выключен",
                "afk": "<b>НЕ тэгай меня.</b>",
-               "afk_reason": "<i>{}</i>"}
+               "afk_reason": "{}"}
 
     async def client_ready(self, client, db):
         self._db = db
@@ -49,13 +49,6 @@ class AFKMod(loader.Module):
             if not afk_state:
                 return
             logger.debug("tagged!")
-            ratelimit = self._db.get(__name__, "ratelimit", [])
-            if utils.get_chat_id(message) in ratelimit:
-                return
-            else:
-                self._db.setdefault(__name__, {}).setdefault("ratelimit", []).append(utils.get_chat_id(message))
-                self._db.save()
-            user = await utils.get_user(message)
             if user.is_self or user.bot or user.verified:
                 logger.debug("User is self, bot or verified.")
                 return
