@@ -45,10 +45,12 @@ class AFKMod(loader.Module):
         if not isinstance(message, types.Message):
             return
         if message.mentioned or getattr(message.to_id, "user_id", None) == self._me.id:
-            if self.get_afk() != "False":
-             vafk_state = self.get_afk()
-             ret = self.strings("afk_reason", message).format(afk_state)
-             await utils.answer(message, ret)
+            if self.get_afk() != False:
+                vafk_state = self.get_afk()
+                ret = self.strings("afk_reason", message).format(afk_state)
+                await utils.answer(message, ret)
+            else:
+                return
 
     def get_afk(self):
         return self._db.get(__name__, "afk", False)
