@@ -203,7 +203,7 @@ async def _(event):
             ms = (end - start).seconds
             await mone.edit("Вскрыл RAR `{}` за {} секунд.".format(downloaded_file_name, ms))
 
-        patoolib.extract_archive(downloaded_file_name, outdir=extracted)
+        patool.extract_archive(downloaded_file_name, outdir=extracted)
         filename = sorted(get_lst_of_files(extracted, []))
         #filename = filename + "/"
         await event.edit("Сейчас вскроем")
