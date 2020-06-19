@@ -50,4 +50,4 @@ class AFKMod(loader.Module):
             await utils.answer(message, ret)
 
     def get_afk(self) :
-        return self._db.get(__name__, "afk", False)
+        return self._db.get(__name__, "afk")
