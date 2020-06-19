@@ -14,10 +14,6 @@
 # requires: hachoir
 # requires: datetime
 # requires: zipfile
-# requires: patoolib
-# requires: subprocess
-# requires: sample_config
-
 
 import asyncio
 import os
