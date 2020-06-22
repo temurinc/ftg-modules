@@ -1,13 +1,12 @@
 from .. import loader, utils
 
 import logging
-import datetime
-import time
+
 
 from telethon import types
 
 logger = logging.getLogger(__name__)
-
+a
 
 @loader.tds
 class AFKMod(loader.Module):
@@ -29,7 +28,6 @@ class AFKMod(loader.Module):
         else:
             self._db.set(__name__, "afk", True)
         self._db.set(__name__, "gone", time.time())
-        self._db.set(__name__, "ratelimit", [])
         await self.allmodules.log("afk", data=utils.get_args_raw(message) or None)
         await utils.answer(message, self.strings("gone", message))
 
@@ -37,7 +35,6 @@ class AFKMod(loader.Module):
         """Перестаёт писать"""
         self._db.set(__name__, "afk", False)
         self._db.set(__name__, "gone", None)
-        self._db.set(__name__, "ratelimit", [])
         await self.allmodules.log("unafk")
         await utils.answer(message, self.strings("back", message))
 
