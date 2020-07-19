@@ -6,7 +6,6 @@ import logging
 from telethon import types
 
 logger = logging.getLogger(__name__)
-a
 
 @loader.tds
 class AFKMod(loader.Module):
