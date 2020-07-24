@@ -36,7 +36,7 @@ def register(cb):
 
         await message.edit("<code>Надеваем маску...</code>")
 
-        url = "https://covid19.mathdro.id/api/countries/" + country
+        url = "https://covid19.mathdro.id/api/countries/"{"name":"Uzbekistan","iso2":"UZ","iso3":"UZB"},
         tries = 0
         response = requests.get(url)
 
