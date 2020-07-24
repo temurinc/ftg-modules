@@ -30,13 +30,13 @@ def register(cb):
         """.covid <Страна (или нет, тогда выведет указанную)>"""
         args = utils.get_args_raw(message)
         if not args:
-            country = "RU"
+            country = "UZ"
         else:
             country = args
 
         await message.edit("<code>Надеваем маску...</code>")
 
-        url = "https://covid19.mathdro.id/api/countries/" + country
+        url = "https://covid19.mathdro.id/api/countries/"{"name":"Uzbekistan","iso2":"UZ","iso3":"UZB"},
         tries = 0
         response = requests.get(url)
 
